@@ -1,5 +1,45 @@
-$body-color: blue;
+$body-color: red;
+$bg-color: green;
+$link-color:black;
+$font-stack:    Helvetica, sans-serif;
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box { @include transform(rotate(30deg)); height: 100px; width: 100px; background-color: goldenrod;}
 
 body {
   color: $body-color;
+}
+.header{
+  background-color: $bg-color;
+}
+h1{
+  color: hotpink;
+}
+nav{
+  a{
+    text-decoration: rgb(232, 29, 130);
+    &:hover{
+    background-color: rgb(26, 2, 2);
+    }
+  }
+  
+}
+section{
+  background: indigo;
+  height: 500px;
+  width: 500px;
+}
+h2{
+  color: cornflowerblue;
+}
+.box1{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  
+  background-color: maroon;
+  
 }
